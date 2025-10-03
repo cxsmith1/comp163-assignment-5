@@ -42,3 +42,29 @@ if primefr:
 
 print('')
 
+#Challlenge 3
+print('=== Challenge 3: Multiplication Table ===')
+print('Multiplication Table:')
+goober = ''
+collagen = ''
+goobgen = ''
+
+for goober in range(0, 11): #for the variable goober in the range 1-10
+    for collagen in range(0, 11): #for each column in range 1-10
+        
+        if goober == 0 and collagen == 0:
+            #print the blank corner space
+            print('    ', end = '') 
+        elif goober == 0:
+            #print column headers
+            print(f'{collagen:4}', end='')
+        elif collagen == 0:
+            #print row headers 
+            print(f'{goober:4}', end='') 
+        else:
+            #print the product
+            goobgen = goober * collagen #creates our grid
+            # Use formatting to ensure all numbers align
+            print(f'{goobgen:4}', end = '')
+            
+    print()
